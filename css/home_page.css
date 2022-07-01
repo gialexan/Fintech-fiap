@@ -1,0 +1,211 @@
+* {
+    /* aplica em todos os elementos html*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.container {
+    background-image: url(../img/back.jpg);
+    /*Coloca imagem */
+    background-size: cover;
+    width: 100vw;
+    /* view port width - largura da tela do navegador */
+    height: 100vh;
+    /* view port height - comprimento da tela navegador */
+    display: flex;
+    /* modo de exibição do elemento */
+    justify-content: center;
+    /*justifica todo o conteúdo no eixo principal*/
+    align-items: center;
+    /*justica todo conteúdo no eixo inverso */
+}
+
+.home-box {
+    display: block;
+    /* background-color: hsla(0, 0%, 16%, 0.8); */
+    background: linear-gradient(8deg, rgba(101,80,113,1) 0%, rgba(0,1,22,1) 100%, rgba(0,1,22,1) 100%); 
+    border-radius: 6px;
+    padding: 20px;
+    width: 250px;
+    /* height: 420px; */
+    text-align: center;
+    backdrop-filter: blur(1px);
+}
+
+.usr-config {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.fa-solid {
+    color: #2E65B1;
+}
+
+.usr-perfil, .usr-tollbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #D3B4B3;
+}
+
+h2 {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    display: contents;
+    margin : 30px 0px 10px 30px;
+}
+
+.card-box {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(39, 39, 39);
+    border-radius: 6px;
+    margin-top: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 110px;
+}
+
+.number-card {
+    font-size: 10px;
+}
+
+.card-info {
+    width: 100%;
+    text-align: right;
+}
+
+.card-info span, .flag {
+    margin: 0px 10px 0px 0px;
+}
+
+.financial-info {
+    width : 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 45px 0px 0px 0px;
+}
+
+.balance {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+    margin: 0px 0px 4px 0px;
+}
+
+.brl i {
+    color: #2E65B1;
+}
+
+.flag img {
+    width: 40px;
+}
+
+.balance-info {
+    margin: 0px 0px 0px 10px;
+}
+
+.next-page {
+    margin-top: 10px;
+    color: white;
+}
+
+.account-transactions .transaction-info {
+    margin: 130px 0px 10px 0px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.account-transactions {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    margin: 5px 0px 5px 0px;
+}
+
+.transaction_withdraw, .transaction_deposit, .transaction_transfer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 80%;
+    margin: 0px 0px 5px 0px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.transaction_withdraw img, 
+.transaction_deposit img, 
+.transaction_transfer img {
+    width: 30px;
+}
+
+.transaction_withdraw, .transaction_transfer {
+    background: linear-gradient(0deg, rgba(227,38,54,1) 0%, rgba(0,1,22,1) 100%, rgba(0,1,22,1) 100%);
+}
+
+.transaction_deposit {
+    background: linear-gradient(0deg, rgba(127,255,0,1) 0%, rgba(56,86,0,1) 49%, rgba(22,6,0,1) 87%);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 10px 0px;
+}
+
+.other-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+    color: #272727;
+}
+
+button:hover {
+    background-color: #2E65B1;
+    color: white;
+}
+
+button img {
+    width: 30px;
+}
